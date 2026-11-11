@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1612;
+  color: #4a3f35;
+  width: 100%;
+}
+
+.pagina {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f4efe6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.pagina-capa {
+  background-image: url('https://raw.githubusercontent.com/Millene-Oliveira/Projeto_coffea/refs/heads/main/Imagens/c1_fundo.png');
+}
+
+
+.pagina-cafes {
+  background-image: url('file:///C:/Users/aluno1/Downloads/Gemini_Generated_Image_oze4t1oze4t1oze4.jpg');
+}
+
+.pagina-salgados {
+  background-image: url('file:///C:/Users/aluno1/Downloads/Gemini_Generated_Image_oze4t1oze4t1oze4.jpg');
+}
+
+.pagina-doces {
+  background-image: url('https://raw.githubusercontent.com/Millene-Oliveira/Projeto_coffea/refs/heads/main/Imagens/fundo_geral.jpg');
+}
+
+.pagina-bebidas {
+  background-image: url('https://raw.githubusercontent.com/Millene-Oliveira/Projeto_coffea/refs/heads/main/Imagens/fundo_geral.jpg');
+}
+
+.container-capa {
+  text-align: center;
+  width: 100%;
+  max-width: 850px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.tag-capa {
+  position: absolute;
+  top: 35px;
+  left: 45%;
+  font-size: 1.1rem;
+  letter-spacing: 6px;
+  color: #8c5a38;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+
+.titulo-capa {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem;
+  line-height: 1.05;
+  color: #2b2118;
+  margin-bottom: 24px;
+  font-weight: 700;
+
+  /* Contorno sólido e legível estilo Canva (funciona em todos os navegadores) */
+  text-shadow:
+    -2px -2px 0 #f4efe6,
+    2px -2px 0 #f4efe6,
+    -2px 2px 0 #f4efe6,
+    2px 2px 0 #f4efe6,
+    -2px 0px 0 #f4efe6,
+    2px 0px 0 #f4efe6,
+    0px -2px 0 #f4efe6,
+    0px 2px 0 #f4efe6;
+}
+
+.descricao-capa {
+  font-size: 1.25rem;
+  color: #4a382a;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 680px;
+  text-shadow: -2px -2px 0 #f4efe6,
+    2px -2px 0 #f4efe6,
+    -2px 2px 0 #f4efe6,
+    2px 2px 0 #f4efe6,
+    -2px 0px 0 #f4efe6,
+    2px 0px 0 #f4efe6,
+    0px -2px 0 #f4efe6,
+    0px 2px 0 #f4efe6;
+}
+
+.cabecalho-secao {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-secao {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #2b2118;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(244, 239, 230, 0.9);
+}
+
+.subtitulo-secao {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #5a4738;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.grade-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.grade-itens-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 18px;
+}
+
+.cartao-item {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.imagem-item {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background-color: #d9d4cc;
+}
+
+.info-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-item {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2b2118;
+  line-height: 1.1;
+}
+
+.descricao-item {
+  font-size: 0.75rem;
+  color: #5a4738;
+  line-height: 1.25;
+  margin: 3px 0 5px 0;
+}
+
+.preco-item {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #8c5a38;
+}
+
+@media (max-width: 820px) {
+
+  .grade-itens,
+  .grade-itens-2 {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .tag-capa {
+    margin-right: 0;
+  }
+
+  .titulo-capa {
+    font-size: 2.8rem;
+  }
+
+  .descricao-capa {
+    font-size: 1rem;
+  }
+
+  .titulo-secao {
+    font-size: 2.4rem;
+  }
+}
