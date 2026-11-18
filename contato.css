@@ -1,0 +1,113 @@
+
+.secao-final {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 40px 20px 80px;
+
+    background-image: url("https://raw.githubusercontent.com/Millene-Oliveira/Projeto_coffea/refs/heads/main/Imagens/fundo_final_geral.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cartao-contato {
+    width: 74%;
+    max-width: 960px;
+    padding: 36px 50px 42px;
+    margin-bottom: 24px;
+    background-color: rgba(218, 211, 198, 0.72);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-contato {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.cabecalho-contato h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(32px, 3.6vw, 44px);
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #1f1914;
+    margin-bottom: 4px;
+}
+
+.cabecalho-contato .slogan {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(18px, 2vw, 24px);
+    color: #261f1a;
+}
+
+.info-contato {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.coluna-info h3 {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #201914;
+    margin-bottom: 4px;
+}
+
+.coluna-info p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #2c241e;
+}
+
+
+.rodape-final {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: rgba(218, 211, 198, 0.65);
+    text-align: center;
+}
+
+.rodape-final p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #261f1a;
+}
+
+@media (max-width: 700px) {
+    .secao-final {
+        height: auto;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 40px 15px 70px;
+    }
+
+    .cartao-contato {
+        width: 94%;
+        padding: 28px 22px;
+        border-radius: 24px;
+    }
+
+    .info-contato {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
